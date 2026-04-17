@@ -6,8 +6,6 @@ import header from '../../../assets/videos/header.mp4'
 import w from '../../../assets/videos/w.mp4'
 import hero from '../../../assets/videos/hero.mp4'
 import homebg2 from '../../../assets/videos/homebg2.mp4'
-import hero2 from '../../../assets/videos/hero2.mp4'
-import home from '../../../assets/videos/homebg.mp4'
 
 import header2 from '../../../assets/videos/header2.mp4'
 
@@ -17,7 +15,7 @@ import { useLocation } from 'react-router-dom'
 
 const SLIDES = [
     {
-      video: home,
+      video: "https://res.cloudinary.com/dxw8erwq9/video/upload/v1776431574/homebg_uwhxiu.mp4",
       heading: (
         <>
           World Class <span className="text-[#F9981C]">  Manufacturing </span> Services Provider
@@ -109,6 +107,7 @@ const HeroSection = () => {
             loop
             muted
             playsInline
+            preload="auto"  
           />
 
           <div className="absolute inset-0 bg-gradient-to-b max-w-7xl mx-auto" />

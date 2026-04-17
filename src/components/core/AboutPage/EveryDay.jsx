@@ -1,8 +1,7 @@
 import React, { useEffect, useRef, useState }  from 'react'
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { PiSmileyWinkThin } from "react-icons/pi";
-import video from '../../../assets/videos/water.mp4';
-
+const CLOUDINARY_VIDEO = "https://res.cloudinary.com/dxw8erwq9/video/upload/v1776431633/water_sydmac.mp4";
 const EveryDay = () => {
 
             const ref = useRef(null);
@@ -34,14 +33,15 @@ const EveryDay = () => {
       
               <div className="relative h-[380px] sm:h-[420px] md:h-[500px] overflow-hidden ">
       
-                <video
-                  className="absolute top-0 left-0 w-full h-full object-cover"
-                  src={video}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                />
+              <video
+  className="absolute top-0 left-0 w-full h-full object-cover"
+  src={CLOUDINARY_VIDEO}
+  autoPlay
+  loop
+  muted
+  playsInline
+  preload="auto"
+/>
       
                 <div className="absolute inset-0 bg-white/40 sm:bg-white/30" />
       
